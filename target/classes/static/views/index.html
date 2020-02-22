@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main Page</title>
+</head>
+<link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/app/app.css"/>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+<body ng-app="weissCinema">
+<hr/>
+<div class="container" ng-controller="MainController">
+    <img class="logo" src="data:image/png;base64,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">
+    <div align="center">
+        <form name="searchMovie" ng-submit="search(title)">
+            <input type="search" placeholder="Search Movie" required ng-model="title"/>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    {{result}}
+
+
+    <div >
+    <img class="poster" ng-repeat="movie in moviesResult" ng-src="{{movie.Poster}}" ng-click="showDialog($event, movie)" alt="" />
+    </div>
+
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+<script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/app/MainController.js"></script>
+
+</html>
